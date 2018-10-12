@@ -81,7 +81,7 @@ impl<'repo> Tree<'repo> {
         unsafe { raw::git_tree_entrycount(&*self.raw) as usize }
     }
 
-    /// Return `true` if there is not entry
+    /// Return `true` if there is no entry
     pub fn is_empty(&self) -> bool {
         self.len() == 0
     }
